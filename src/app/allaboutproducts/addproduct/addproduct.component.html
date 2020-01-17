@@ -1,0 +1,28 @@
+<mat-toolbar>
+    <span>My Application</span>
+  </mat-toolbar>
+
+
+<mat-card class = "matcard" fxLayout="column" fxLayoutAlign="center center">
+   <form [formGroup]="addproductform">
+    <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="title">
+    </mat-form-field>
+  
+  
+    <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <input matInput placeholder="Description" formControlName="description">
+    </mat-form-field>
+  
+  
+    <button mat-raised-button color="primary"  (click) = "onAddProduct()">Add Product</button>
+</form>
+  </mat-card>
+   
+<!-- div *ngIf = "enable">
+  <app-productlist></app-productlist>
+
+ 
+</div> -->

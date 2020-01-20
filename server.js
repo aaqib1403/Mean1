@@ -17,8 +17,6 @@ app.use((req, res, next) => {
         res.sendStatus(200);
     else
         next();
-
-
 })
 
 app.use("/", router);
@@ -28,8 +26,6 @@ app.use((req, res, next) => {
     res.send("page not found")
 
 })
-
-
 sequelize.authenticate().then((res) => {
 
     console.log("COnnection success")
@@ -49,8 +45,7 @@ product.sync().then(result => {
 
 })
     .catch(err => {
-
-
+        console.log("vsgdsgdsgds")
         console.log(err)
     })
 

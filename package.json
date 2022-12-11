@@ -24,7 +24,7 @@
     "@angular/router": "~8.2.14",
     "@types/atob": "^2.1.2",
     "@types/knex": "^0.16.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mysql2": "^2.1.0",
     "rxjs": "~6.4.0",
     "sequelize": "^5.21.3",
